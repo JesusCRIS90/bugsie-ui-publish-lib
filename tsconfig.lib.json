@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "react-jsx",
+    "declaration": true,                      // Enable declaration files
+    "declarationDir": "./dist/types",         // Set output directory for types
+    "outDir": "./dist",                       // Set output directory for compiled JS
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "emitDeclarationOnly": false              // Ensure declarations + JS are emitted
+  },
+  "include": ["src"],                         // Include the src folder
+  "exclude": ["node_modules", "dist"]         // Exclude these folders
+}
