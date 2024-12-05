@@ -7,9 +7,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'BugSie-UI',
+      name: 'Beexy-UI',
       formats: ['es', 'umd'],
-      fileName: (format) => `bugsie-ui.${format}.js`
+      fileName: (format) => `beexy-ui.${format}.js`
     },
     rollupOptions: {
       external: ['react', 'react-dom', 'react/jsx-runtime'],

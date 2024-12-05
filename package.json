@@ -1,11 +1,11 @@
 {
-  "name": "bugsie-ui",
+  "name": "beexy-ui",
   "private": false,
-  "version": "0.2.0",
+  "version": "0.1.0",
   "description": "A Custom React Component Library",
   "type": "module",
-  "main": "dist/bugsie-ui.umd.js",
-  "module": "dist/bugsie-ui.es.js",
+  "main": "dist/beexy-ui.umd.js",
+  "module": "dist/beexy-ui.es.js",
   "types": "dist/types/index.d.ts",
   "files": ["dist"],
   "scripts": {
@@ -36,7 +36,7 @@
     "vite": "^5.4.10"
   },
   "keywords": ["react", "component", "library"],
-  "author": "Jesus C Risquez",
+  "author": "Jesus Risquez",
   "license": "MIT",
   "repository": {
     "type": "git",
