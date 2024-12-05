@@ -1,0 +1,6 @@
+export type { CommonProps, CommonPropsWithoutChildren } from "./commonsProps"
+export type { iSize } from "./iSize"
+export type { iMinMax } from "./iMinMax"
+export type { iStringVec2D } from "./Vec2Ds"
+export type { igridSpan } from "./gridSpan"
+export type { ImageSize } from "./ImageSize"

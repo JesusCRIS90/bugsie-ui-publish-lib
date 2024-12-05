@@ -1,0 +1,35 @@
+export enum POLICY_ORIENTATION {
+    VERTICAL = 1,
+    HORIZONTAL = 2
+}
+
+export enum POLICY_POSITION {
+    TOP_LEFT = 1,
+    TOP_CENTER = 2,
+    TOP_RIGHT = 3,
+    BOTTOM_LEFT = 4,
+    BOTTOM_CENTER = 5,
+    BOTTOM_RIGHT = 6,
+    CENTER_LEFT = 7,
+    CENTER_CENTER = 8,
+    CENTER_RIGHT = 9,
+    INHERIT = 10,
+}
+
+export enum VERTICAL_POLICY_POSITION {
+    LEFT_LEFT = 1,
+    LEFT_CENTER = 2,
+    LEFT_RIGHT = 3,
+    RIGHT_LEFT = 4,
+    RIGHT_CENTER = 5,
+    RIGHT_RIGHT = 6,
+    CENTER_LEFT = 7,
+    CENTER_CENTER = 8,
+    CENTER_RIGHT = 9
+}
+
+export enum LAYOUT_ALIGNMENT {
+    START,
+    CENTER,
+    END,
+}

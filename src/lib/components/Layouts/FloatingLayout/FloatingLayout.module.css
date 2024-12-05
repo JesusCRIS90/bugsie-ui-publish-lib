@@ -1,0 +1,7 @@
+.floating-layout {
+    position: absolute;
+    display: flex;
+    margin: 0rem;
+    padding: 0rem;
+    gap: 0.5rem;
+}

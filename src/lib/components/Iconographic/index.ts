@@ -1,0 +1,6 @@
+export { SvgIcon } from "./SvgIcon/SvgIcon"
+export { RoundIcon } from "./RoundIcon/RoundIcon"
+export { LinkIcon } from "./LinkIcon/LinkIcon"
+export { Image } from "./Image/Image"
+export { BackGround } from "./Background/Background"
+export { DefaultSVG } from "./DefaultSVG/DefaultSVG"
