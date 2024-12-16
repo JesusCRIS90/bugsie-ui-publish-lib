@@ -9,7 +9,7 @@ export default defineConfig({
       entry: path.resolve(__dirname, 'src/index.ts'),
       name: 'Beexy-UI',
       formats: ['es', 'umd'],
-      fileName: (format) => `beexy-ui.${format}.js`
+      fileName: (format) => `beexy-ui.${format}.js`,
     },
     rollupOptions: {
       external: ['react', 'react-dom', 'react/jsx-runtime'],
@@ -17,17 +17,23 @@ export default defineConfig({
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
-          'react/jsx-runtime': 'jsxRuntime'
+          'react/jsx-runtime': 'jsxRuntime',
         },
         assetFileNames: (chunkInfo) => {
           if (chunkInfo.name === 'style.css') {
             return 'style.css'; // Ensure CSS is output correctly
           }
           return '[name].[ext]';
-        }
-      }
+        },
+      },
     },
-    outDir: './dist', // Output in the same dist directory
-    emptyOutDir: false // Do not remove `dist` directory before building
-  }
+    outDir: './dist',
+    emptyOutDir: false,
+  },
+  css: {
+    modules: {
+      scopeBehaviour: 'local', // Ensure CSS modules use local scoping
+      generateScopedName: '[name]__[local]___[hash:base64:5]', // Class name pattern
+    },
+  },
 });
