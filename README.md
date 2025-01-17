@@ -4,6 +4,12 @@ React Component Library written on TypeScript.
 
 The library is under development and testing, so bugs could be relatively common. Used it under your responsibility.
 
+To make components work correctly, you must import CSS Styles on the code:
+
+```ts
+import 'beexy-ui/dist/style.css'
+```
+
 Currently the library offers React Components on Three Categories:
 
 * Iconographic
