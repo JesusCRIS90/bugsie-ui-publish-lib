@@ -28,7 +28,7 @@ export function generateDefaultSVGIcon(): string {
 
     return `
         <symbol id=${DEFAULT_ICON_ID} viewBox="0 0 24 24">
-            ${getDefaultSVGIcon}
+            ${getDefaultSVGIcon()}
         </symbol>
     `
 }
