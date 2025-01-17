@@ -5,7 +5,6 @@ import {
     buildOuterSizeIconStyle,
     checkSvgRefNameExist
 } from "../../../utils"
-import { DefaultSVG } from "../../Iconographic"
 
 import styles from "./RoundIcon.module.css"
 
@@ -37,22 +36,19 @@ const RoundIcon: FC<Props> = ({
     outerSize = 44
 }) => {
 
+    if (!checkSvgRefNameExist(refName)) {
+        refName = "default-icon";
+    }
+
     const combinedClassName = `${styles["round-icon"]} ${className}`;
     const combinedStyle = buildStyle(style, outerSize);
 
     return (
-
         <div id={id} className={combinedClassName} style={combinedStyle}>
-            {
-                checkSvgRefNameExist(refName) ?
-                    <svg width={innerSize} height={innerSize}>
-                        <use xlinkHref={`#${refName}`} />
-                    </svg>
-                    : <DefaultSVG id={id} className={combinedClassName} style={style}
-                        refName={"no-icon"} size={innerSize} />
-            }
+            <svg width={innerSize} height={innerSize}>
+                <use xlinkHref={`#${refName}`} />
+            </svg>
         </div>
-
     )
 }
 

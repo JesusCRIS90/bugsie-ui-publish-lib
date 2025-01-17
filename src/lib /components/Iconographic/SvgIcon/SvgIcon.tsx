@@ -1,8 +1,8 @@
 import { FC, CSSProperties } from 'react'
 
 import { CommonProps } from "../../../interfaces"
+
 import { checkSvgRefNameExist } from "../../../utils"
-import { DefaultSVG } from "../../Iconographic"
 
 import styles from "./SvgIcon.module.css"
 
@@ -28,11 +28,8 @@ const SvgIcon: FC<Props> = ({
     size = 24,
 }) => {
 
-    if (!checkSvgRefNameExist(refName)) {
-        return (
-            <DefaultSVG id={id} className={className} style={style}
-                refName={"no-icon"} size={size} />
-        )
+    if( !checkSvgRefNameExist(refName) ) {
+        refName = "default-icon";
     }
 
     const combinedClassName = `${styles["svg-icon"]} ${className}`;

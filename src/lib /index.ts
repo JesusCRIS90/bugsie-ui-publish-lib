@@ -22,7 +22,6 @@ export {
     LinkIcon,
     Image,
     BackGround,
-    DefaultSVG
 } from "./components"
 
 export type {
@@ -88,7 +87,7 @@ export {
     renderWords,
     injectDefaultSpriteSheet,
     generateDefaultSpriteSheet,
-    checkSvgRefNameExist
+    checkSvgRefNameExist,
 } from "./utils"
 
 export type {

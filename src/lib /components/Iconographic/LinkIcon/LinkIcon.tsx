@@ -2,7 +2,6 @@ import { FC, CSSProperties } from 'react'
 
 import { CommonProps } from "../../../interfaces"
 import { checkSvgRefNameExist } from "../../../utils"
-import { DefaultSVG } from "../../Iconographic"
 
 import styles from "./LinkIcon.module.css"
 
@@ -31,20 +30,19 @@ const LinkIcon: FC<Props> = ({
     link = "",
 }) => {
 
+    if (!checkSvgRefNameExist(refName)) {
+        refName = "default-icon";
+    }
+
     const combinedClassName = `${styles["svg-icon-link"]} ${className}`;
     const combinedStyle = buildStyle(style);
 
     return (
         <a href={link} target='_blank' rel='noreferrer'>
-            {
-                checkSvgRefNameExist(refName) ?
-                    <svg id={id} className={combinedClassName} style={combinedStyle}
-                        width={size} height={size}>
-                        <use xlinkHref={checkSvgRefNameExist(refName) ? `#${refName}` : `#default-icon`} />
-                    </svg>
-                    : <DefaultSVG id={id} className={combinedClassName} style={style}
-                        refName={"no-icon"} size={size} />
-            }
+            <svg id={id} className={combinedClassName} style={combinedStyle}
+                width={size} height={size}>
+                <use xlinkHref={`#${refName}`} />
+            </svg>
         </a>
     )
 }

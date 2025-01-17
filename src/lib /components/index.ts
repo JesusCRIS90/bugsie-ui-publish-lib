@@ -5,7 +5,6 @@ export {
     RoundIcon,
     SvgIcon,
     BackGround,
-    DefaultSVG
 } from "./Iconographic"
 
 

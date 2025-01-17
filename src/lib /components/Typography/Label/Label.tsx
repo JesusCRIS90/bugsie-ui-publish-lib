@@ -4,9 +4,6 @@ import styles from "./Label.module.css"
 
 import { CommonProps as Props } from "../../../interfaces"
 
-// interface Props extends CommonProps {
-//     // 
-// }
 
 function buildStyle( 
     userStyle: CSSProperties,

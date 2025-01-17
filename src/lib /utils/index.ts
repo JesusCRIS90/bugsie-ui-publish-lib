@@ -1,11 +1,27 @@
 export { moveAnchorPoint } from "./moveAnchorPoint"
 export { calculateCardMinMaxWidth } from "./calculateCardMinMaxWidth"
 export { inputGridInterpretation } from "./inputGridInterpretation"
-export { StringArray2LowerCase } from "./StringArray2LowerCase"
 export { renderWords } from "./renderWords"
 export { injectDefaultSpriteSheet } from "./injectDefaultSpriteSheet"
 export { generateDefaultSpriteSheet } from "./generateDefaultSpriteSheet"
-export { checkSvgRefNameExist } from "./checkSvgRefNameExist"
+
+
+export {
+    IsEmptyString,
+    StringArray2LowerCase,
+} from "./StringsTools"
+
+export { 
+    getHtmlElementsInBody,
+    getHTMLElementsInBodyByType,
+    existHTMLElementWithIdInHTMLElementsArray,
+    createInjectHTMLElementOnBodyWithId,
+    getHTMLElementInBodyById
+ } from "./DOM_Tools"
+
+export {
+    checkSvgRefNameExist
+} from "./IconographicTools"
 
 export {
     buildGapStyle,
@@ -28,6 +44,6 @@ export {
     buildImageFittingStyle,
     buildBackgroundImageAnchorPointStyle,
     buildBackgroundImageStyle
-} from "./cssStylesBuilder"
+} from "./CSS_Styles_Builders_Tools"
 
 
