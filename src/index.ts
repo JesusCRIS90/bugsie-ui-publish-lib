@@ -24,7 +24,6 @@ export {
     LinkIcon,
     Image,
     BackGround,
-    DefaultSVG
 } from "./lib/components"
 
 export type {
