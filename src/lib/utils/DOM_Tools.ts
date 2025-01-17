@@ -92,7 +92,8 @@ export function insertContentOnHTMLElement( element: HTMLElement | null, content
         return element;
     }
 
-    element.innerHTML = content;
+    // element.innerHTML = content;
+    element.insertAdjacentHTML("afterbegin", content);
 
     return element;
 }
