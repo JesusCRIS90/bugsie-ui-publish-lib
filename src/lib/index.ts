@@ -22,6 +22,8 @@ export {
     LinkIcon,
     Image,
     BackGround,
+    FixedWidthLayout,
+    PairLayout
 } from "./components"
 
 export type {
@@ -54,6 +56,7 @@ export {
     VERTICAL_POLICY_POSITION,
     POLICY_ORIENTATION,
     LAYOUT_ALIGNMENT,
+    PAIR_DISTRIBUTION,
     TYPOGRAPHY_LEVEL,
     IMAGE_FITTING
 } from "./enums"
@@ -94,7 +97,8 @@ export type {
     CardChildren,
     itemGridDir,
     StringArray,
-    TSX_Components
+    TSX_Components,
+    NullableNumber
 } from "./types"
 
 

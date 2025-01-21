@@ -1,0 +1,16 @@
+.pair-layout{
+    display: grid;
+    align-items: center;
+}
+
+.child-start{
+    justify-self: start;
+}
+
+.child-center{
+    justify-self: center;    
+}
+
+.child-end{
+    justify-self: end;
+}

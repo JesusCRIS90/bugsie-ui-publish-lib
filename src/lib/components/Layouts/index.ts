@@ -11,4 +11,7 @@ export { ResponsiveCardGrid } from "./ResponsiveCardGrid/ResponsiveCardGrid"
 export { Card } from "./Card/Card"
 export { LineSeparator } from "./LineSeparator/LineSeparator"
 
+export { FixedWidthLayout } from "./FixedWidthLayout/FixedWidthLayout"
+export { PairLayout } from "./PairLayout/PairLayout"
+
 export type { Props as CardProps } from "./Card/Card"

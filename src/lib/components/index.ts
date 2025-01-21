@@ -21,7 +21,9 @@ export {
     LineSeparator,
     RelativeLayout,
     ResponsiveCardGrid,
-    VerticalLayout
+    VerticalLayout,
+    FixedWidthLayout,
+    PairLayout
 } from "./Layouts"
 
 export type {
