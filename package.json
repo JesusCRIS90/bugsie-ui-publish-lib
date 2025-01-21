@@ -1,7 +1,7 @@
 {
   "name": "beexy-ui",
   "private": false,
-  "version": "0.3.3",
+  "version": "0.4.3",
   "description": "A Custom React Component Library",
   "type": "module",
   "main": "dist/beexy-ui.umd.js",

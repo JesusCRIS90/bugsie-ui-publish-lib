@@ -29,6 +29,8 @@ Currently the library offers React Components on Three Categories:
   * GridLayout1D
   * GridLayout2D
   * ItemGridLayout
+  * FixedWidthLayout
+  * PairLayout
   * LineSeparator
   * Frame
 * Typography
