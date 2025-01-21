@@ -10,4 +10,6 @@ export type CardChildren = ReactElement<CardProps> | ReactElement<CardProps>[] |
 export type itemGridDir = igridSpan | null;
 export type StringArray = string[];
 
+export type NullableNumber = number | null;
+
 export type TSX_Components = ReactNode | ReactNode[];

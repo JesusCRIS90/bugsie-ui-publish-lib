@@ -33,3 +33,9 @@ export enum LAYOUT_ALIGNMENT {
     CENTER,
     END,
 }
+
+export enum PAIR_DISTRIBUTION {
+    OPPOSITE,
+    CENTER,
+    GLUED,
+}

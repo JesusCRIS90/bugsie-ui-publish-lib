@@ -43,7 +43,10 @@ export {
     buildImageSizeStyle,
     buildImageFittingStyle,
     buildBackgroundImageAnchorPointStyle,
-    buildBackgroundImageStyle
+    buildBackgroundImageStyle,
+    buildHeightStyle,
+    buildWidthStyle,
+    buildPairDistributionStyle
 } from "./CSS_Styles_Builders_Tools"
 
 

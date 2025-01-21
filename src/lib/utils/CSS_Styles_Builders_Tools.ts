@@ -13,7 +13,12 @@ import { VERTICAL_POLICY_POSITION as Vpos } from "../enums"
 import { POLICY_POSITION as ANCHOR_POINT } from "../enums"
 import { POLICY_POSITION as POL_POS } from "../enums"
 import { POLICY_ORIENTATION as ORIENTATION } from "../enums"
-import { IMAGE_FITTING } from "../enums"
+import { 
+    IMAGE_FITTING,
+    PAIR_DISTRIBUTION
+} from "../enums"
+
+import { StringArray } from "../types"
 
 import { AnchorPointMap } from "../Maps"
 
@@ -564,4 +569,57 @@ export function buildBackgroundImageAnchorPointStyle(
         ...userStyle, 
         backgroundPosition: AnchorPointMap.get( anchorPoint ),
     };
+}
+
+export function buildWidthStyle(
+    userStyle: CSSProperties,
+    _width: number
+): CSSProperties {
+
+    return { 
+        ...userStyle, 
+        width: _width,
+    };
+}
+
+export function buildHeightStyle(
+    userStyle: CSSProperties,
+    _height: number
+): CSSProperties {
+
+    return { 
+        ...userStyle, 
+        height: _height,
+    };
+}
+
+// --------------------------
+
+export function buildPairDistributionStyle(
+    pairDIstribution: PAIR_DISTRIBUTION
+): StringArray {
+
+    const parDistributionArray: StringArray = [];
+
+    switch (pairDIstribution) {
+        case PAIR_DISTRIBUTION.OPPOSITE:
+            parDistributionArray.push( "child-start" );
+            parDistributionArray.push( "child-end" );
+            break;
+        case PAIR_DISTRIBUTION.CENTER:
+            parDistributionArray.push( "child-center" );
+            parDistributionArray.push( "child-center" );
+            break;
+
+        case PAIR_DISTRIBUTION.GLUED:
+            parDistributionArray.push( "child-end" );
+            parDistributionArray.push( "child-start" );
+            break;
+
+        default:
+            break;
+    }
+
+
+    return parDistributionArray;
 }

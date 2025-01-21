@@ -2,5 +2,6 @@ export type {
     CardChildren,
     itemGridDir,
     StringArray,
-    TSX_Components
+    TSX_Components,
+    NullableNumber
 } from "./commonTypes"
